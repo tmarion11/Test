@@ -1,0 +1,90 @@
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta name="description" content="PMA Debugging Practice" />
+	
+	<title>Debugging Assignment</title>
+
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+    <link rel="stylesheet" href="themes/MiU.css"/>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+	
+	<!-- Home Page -->
+		<div data-role="page" id="home">
+			<div data-role="header" data-position="fixed">
+				<h1>Ice Cream Flavors</h1>
+			</div>
+			<div data-role="content">
+				
+					<a href="#" id="display" data-role="button" data-transition="fade">Show Flavors</a>
+              
+                <ul id="list" data-role="listview">
+				</ul>
+                
+				
+					
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="controlgroup" data-type="horizontal" id="footNav">
+					
+					<a href="#addFlavor" data-transition="slide" data-role="button" data-inline="true">Add a Flavor</a>				
+					<a href="#" id="clear" data-inline="true">Clear all?</a>
+				</div>
+			</div>
+		</div>
+		
+		<div data-role="page" id="addFlavor" data-add-back-btn="true">
+			<div data-role="header" data-position="fixed">
+				<h1>Add Flavor</h1>
+			</div>
+			<div data-role="content">
+				
+	<!-- Form to add Flavor -->
+				
+				<form action="#" id="flavorForm">
+					<ul id="errors"></ul>
+					
+					<div data-role="fieldcontain">
+                      <label for="flavor">Flavor: </label>
+						<input type="text" name="flavor" id="flavor" class="required" />
+					</div>	
+					<div data-role="fieldcontain">
+						<label for="favorite">Favorite?</label>
+						<input type="checkbox" id="favorite" value="Yes" class="checkbox" />
+						
+					</div>
+					<div data-role="fieldcontain">
+						<label for="notes">Notes: </label>
+						<textarea name="notes" id="notes"></textarea>
+					</div>	
+						<input type="submit" value="Save Flavor" id="submitFlavor" data-theme="b" />
+
+				</form>	
+
+				
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<a href="#home" id="display" data-transition="slide" data-role="button" data-inline="true">Home</a>
+			</div>
+		</div>
+		
+
+	<!-- Scripts -->
+			<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+			<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+			<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>
