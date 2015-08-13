@@ -4,12 +4,12 @@ $(document).ready(function () {
 
     var flavors = [
         {
-            'flavor': 'Vanilla',
+            'flavor': 'Vanilla Bean',
             'favorite': 'Yes!',
             'notes': 'Great for sundaes.'
         },
         {
-            'flavor': 'Chocolate',
+            'flavor': 'Chocolate Mint',
             'favorite': 'Yes!',
             'notes': 'All parts chocolate. What\'s not to love?'
         },
