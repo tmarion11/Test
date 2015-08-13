@@ -10,12 +10,12 @@ $(document).ready(function () {
         },
         {
             'flavor': 'Chocolate',
-            'favorite': 'Yes!',
+            'favorite': 'No!',
             'notes': 'All parts chocolate. What\'s not to love?'
         },
         {
             'flavor': 'Neapolitan',
-            'favorite': 'No',
+            'favorite': 'Yes!',
             'notes': 'I dislike the strawberry chunks.'
         }
     ];
