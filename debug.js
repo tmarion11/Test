@@ -9,7 +9,7 @@ $(document).ready(function () {
             'notes': 'Great for sundaes.'
         },
         {
-            'flavor': 'Chocolate',
+            'flavor': 'Chocolate Mint',
             'favorite': 'No!',
             'notes': 'All parts chocolate. What\'s not to love?'
         },
@@ -31,7 +31,7 @@ $(document).ready(function () {
 
             $('#list').append(newLi);
 
-            var heading = $('<h3>');
+            var heading = $('<h2>');
             heading.html(flavors[i].flavor);
             newLi.append(heading);
             var pNotes = $('<p>');
