@@ -4,7 +4,7 @@ $(document).ready(function () {
 
     var flavors = [
         {
-            'flavor': 'Vanilla',
+            'flavor': 'Vanilla Bean',
             'favorite': 'Yes!',
             'notes': 'Great for sundaes.'
         },
